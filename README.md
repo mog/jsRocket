@@ -70,7 +70,7 @@ function onSyncReady(){
 function onSyncUpdate(newRow){
   //row is only given if you navigate, or change a value on the row in Rocket
   //on interpolation change (hit [i]) no row value is sent, as the current there is the upper row of your block
-  if(!isNaN(row)){
+  if(!isNaN(newRow)){
     row = newRow;
   }
 
