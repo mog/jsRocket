@@ -57,19 +57,18 @@
 
         function addCube() {
 
-            var _diameter = 100,
-                _materials = [],
+            var _materials = [],
                 _colors = [0x540024, 0x7A0538, 0xBA0032, 0xE9001C, 0xFF3700, 0x2e0014];
 
             for (var i = 0; i < 6; i++) {
                 _materials.push(new THREE.MeshBasicMaterial({ color:_colors[i] }));
             }
 
-            _cube = new THREE.Mesh(
-                    new THREE.CubeGeometry(_diameter, _diameter, _diameter, 1, 1, 1, _materials),
-                    new THREE.MeshFaceMaterial());
+            var _cube = new THREE.Mesh(
+                    new THREE.BoxGeometry( 100, 100, 100 ),
+                    new THREE.MeshFaceMaterial( _materials ) );
 
-            _scene.add(_cube);
+            _scene.add( _cube );
         }
 
         function prepareSync() {
