@@ -1,3 +1,3 @@
 MOVED
 =====
-jsRocket has moved into the upstream (https://github.com/kusma/rocket)[GNU Rocket] repository.
+jsRocket has moved into the upstream [GNU Rocket](https://github.com/kusma/rocket) repository.
